@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shirt"></i>
+            Smart Wardrobe
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wardrobe.html">Wardrobe</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a class="active" href="planner.html">Planner</a></li>
+            <li><a href="favourites.html">Favorites</a></li>
+        </ul>
+    </nav>
+
+    <div class="planner-container">
+
+        <h1>Weekly Outfit Planner</h1>
+
+        <div class="planner-grid">
+
+            <div class="day-card">
+                <h2>Monday</h2>
+                <input type="text" id="monday">
+            </div>
+
+            <div class="day-card">
+                <h2>Tuesday</h2>
+                <input type="text" id="tuesday">
+            </div>
+
+            <div class="day-card">
+                <h2>Wednesday</h2>
+                <input type="text" id="wednesday">
+            </div>
+
+            <div class="day-card">
+                <h2>Thursday</h2>
+                <input type="text" id="thursday">
+            </div>
+
+            <div class="day-card">
+                <h2>Friday</h2>
+                <input type="text" id="friday">
+            </div>
+
+            <div class="day-card">
+                <h2>Saturday</h2>
+                <input type="text" id="saturday">
+            </div>
+
+            <div class="day-card">
+                <h2>Sunday</h2>
+                <input type="text" id="sunday">
+            </div>
+
+        </div>
+
+        <button class="btn" onclick="savePlanner()">
+            Save Planner
+        </button>
+
+    </div>
+
+    <script src="planner.js"></script>
+
+</body>
+</html>

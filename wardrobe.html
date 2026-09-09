@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wardrobe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shirt"></i>
+            Smart Wardrobe
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="wardrobe.html">Wardrobe</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="favourites.html">Favorites</a></li>
+        </ul>
+    </nav>
+
+    <div class="planner-container">
+
+        <h1>My Wardrobe</h1>
+
+        <div class="wardrobe-form">
+
+            <input
+                type="text"
+                id="dress-name"
+                placeholder="Enter dress name">
+
+            <select id="category">
+                <option value="Top">Top</option>
+                <option value="Bottom">Bottom</option>
+                <option value="Dress">Dress</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+            <input type="file" id="dress-image">
+
+            <button onclick="addDress()">
+                Add Dress
+            </button>
+
+        </div>
+
+        <div id="wardrobe-list" class="features"></div>
+
+    </div>
+
+    <script src="wardrobe.js"></script>
+
+
+</body>
+</html>

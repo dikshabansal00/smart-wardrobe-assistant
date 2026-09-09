@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shirt"></i>
+            Smart Wardrobe
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wardrobe.html">Wardrobe</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="favourites.html">Favorites</a></li>
+            <li><a class="active" href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="planner-container">
+
+        <h1>Wardrobe Dashboard</h1>
+
+        <div class="features">
+
+            <div class="card">
+                <i class="fa-solid fa-shirt"></i>
+                <h2 id="totalClothes">0</h2>
+                <p>Total Clothes</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-heart"></i>
+                <h2 id="totalFavorites">0</h2>
+                <p>Favorites</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar"></i>
+                <h2 id="plannedDays">0</h2>
+                <p>Planned Days</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
